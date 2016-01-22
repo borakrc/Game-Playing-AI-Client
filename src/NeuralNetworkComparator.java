@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+
+public class NeuralNetworkComparator implements Comparator<ArtificialNeuralNetwork> {
+
+	@Override
+	public int compare(ArtificialNeuralNetwork arg0, ArtificialNeuralNetwork arg1) {
+		if (arg0.score > arg1.score)
+			return -1;
+		if (arg0.score < arg1.score)
+			return 1;
+		return 0;
+				
+	}
+
+}
